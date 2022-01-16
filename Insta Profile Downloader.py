@@ -1,3 +1,5 @@
+# Author:-Narayan Bhadaniya
+#importing Library
 from tkinter import *
 from tkinter.filedialog import asksaveasfile,askopenfile
 import tkinter as tk
@@ -8,6 +10,7 @@ window=Tk()
 window.title("Insta Profile Downloader")
 window.config(bg="Skyblue")
 
+#Windows Size
 sw=window.winfo_screenwidth()
 sh=window.winfo_screenheight()
 w=sw-800
@@ -15,6 +18,7 @@ h=sh-200
 wpos=(sw/2)-(w/2)
 hpos=(sh/2)-(h/2)
 window.geometry("%dx%d+%d+%d"%(w,h,wpos,hpos))
+
 
 def igprofile():
     iguser=str(E1.get())
